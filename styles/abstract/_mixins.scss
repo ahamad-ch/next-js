@@ -1,0 +1,7 @@
+@mixin round-container($border-color, $shadow-color) {
+  display: flex;
+  padding: 14px;
+  border-radius: 50px;
+  border: 1px solid $border-color;
+  box-shadow: -8px 8px $shadow-color;
+}
