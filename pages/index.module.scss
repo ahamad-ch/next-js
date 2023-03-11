@@ -1,3 +1,5 @@
+@use "styles/abstract" as *;
+
 .container {
   padding: 0 2rem;
 }
@@ -6,25 +8,19 @@
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
-  display: flex;
+  @extend %flex-center-aligned;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer {
-  display: flex;
+  @extend %flex-center-aligned;
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center-aligned;
   flex-grow: 1;
 }
 
@@ -66,9 +62,7 @@
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center-aligned;
   flex-wrap: wrap;
   max-width: 800px;
 }
